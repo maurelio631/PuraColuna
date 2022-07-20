@@ -1,8 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
+
 :root {
     --purple: #69384B;
     --yellow: #F8BE7A;
+    --white: #FFFFFF;
     --headers: 'Merriweather';
     --headers-size: 24px;
-    --content: 'Montserrat Medium';
+    --content: 'Montserrat';
     --content-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: block;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--yellow);
+    display: block;
+}
+
+nav ul li a:hover {
+    color: var(--white);
+}
+
+nav div {
+    position: absolute;
+    top: .5rem !important; 
+    right: 1rem; 
+    top: 1px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    z-index: 1;
+}
+
+
+.toggleButton span{
+    height: 3px;
+    width: 70%;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-block: 3px;
+}
+
+.banner{
+    width: 100%;
+    background-image: url('../assets/img/Banner.jpg');
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i:hover {
+    color: #F70301;
+    transform: scale(1.7);
+    transition-delay: .2s;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin: 0.7em;
+}
+
+.logo a {
+    display: block;
+}
+
+
+.banner {
+    display: block;
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.banner h3 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.banner label {
+    font-size: 2vw;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 51%;
+    left: 0px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+.extraInfo p {
+    text-align: center;
+    margin: 20px;
+}
+
+.extraInfo ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.iconPreto {
+    color: black;
+}
+
+.profissionais {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoProfissional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoProfissional {
+    height: 200px;
+}
+
+.nomeProfissional {
+    margin-top: 15px;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardsNotInline {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsInline {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 340px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.256);
+    border-radius: 30px;
+    background: white;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+}
+
+.unidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.unidade {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+
+.fachadaUnidade {
+    max-width: 100%;
+    width: 500px;
+    margin-right: 50px;
+}
+
+.unidadeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 30px;
+}
+
+.nomeUnidade {
+    margin-bottom: 20px;
+}
+
+.infoLocal {
+    margin-bottom: 20px;
+}
+
+.telefonesContato {
+    margin-bottom: 20px;
+}
+
+.btnMarcar {
+    align-self: center;
+    margin-left: 60px;
+}
+
+.btnMarcar img {
+    height: 60px;
+}
+
+.backToTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    text-align: center;
+}
+
+footer img {
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    color: #fff;
+}
+
+@media(min-width:1000px) {
+    #social {
+        display: none;
+    }
+}
+
+/* 1000px*/
+@media (max-width:1000px) {
+    .gallery-cell {
+        width: 100%;
+    }
+
+    .toggleButton {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+
+    .navbarLinks.active {
+        display: none;
+    }
+
+    .pacienteColuna {
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+
+    .pacienteColuna img {
+        max-width: 100%;
+        width: 70%;
+        margin: 50px 0 0 0;
+        padding: 0;
+    }
+
+    .banner h3 {
+        top: 30%;
+        font-size: 2.125rem;
+    }
+
+    .banner label {
+        font-size: 1.1rem;
+        top: 51%
+    }
+
+    .quiro {
+        margin: 0;
+        padding: 20px;
+    }
+
+
+    .info {
+        flex-direction: column;
+    }
+
+    .extraInfo h3 {
+        text-align: center;
+        display: flex;
+        padding: 26px;
+        margin-left: 4%;
+        margin-right: 4%;
+        justify-content: center;
+    }
+
+    .extraInfo ul {
+        margin: 0;
+        padding: 10px;
+        margin-left: 50%;
+    }
+
+    .extraInfo p {
+        text-align: justify;
+        margin: 0;
+        padding: 26px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .unidade {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .nomeUnidade {
+        margin-top: 15px;
+    }
+
+    .unidadeInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btnMarcar {
+        margin: 25px 0 0 0;
+
+    }
+
+    .tituloComIcon {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .social a i {
+        width: 10px;
+    }
+
+    .unidade {
+        margin-bottom: 2%;
+    }
+
+    footer p {
+        padding: 1%;
+    }
+}
+
+@media (max-width:700px) {
+    .banner h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .banner h3 {
+        font-size: 1rem;
+    }
+
+    .banner label {
+        font-size: 1rem;
+        top: 47%;
+    }
+
+    .unidade {
+        margin: 0 auto;
+    }
+
+    .unidadeInfo {
+        text-align: center;
+    }
+
+
+
+}
+
+/*400px*/
+@media (max-width:400px) {
+    .banner h3 {
+        font-size: 1.2rem;
+    }
+
+    .unidade {
+        margin: 0 auto;
+    }
+
 }
