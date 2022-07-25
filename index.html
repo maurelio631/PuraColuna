@@ -13,40 +13,54 @@
         >
         <title>Pura Coluna</title>
     </head>
-    <body>
+    <body class="w-100 h-100 min-vh-100 position-relative">
         <header>
-            <nav>
-                <img src="assets/img/Logo_Header.jpg">
-                <ul>
-                    <li>
-                        <a href="index.html">A QUIROPRAXIA</a>
+            <nav class="d-flex flex-column justify-content-md-around align-items-md-center align-items-center flex-md-row" style="background-color: #69384B;">
+                <a href="index.html" target="_blank">
+                    <img class="align-self-baseline align-self-md-center w-auto" src="assets/img/Logo_Header.jpg">
+                </a>
+                <ul id="navLinks" class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <li class="d-block cursor-pointer p-4">
+                        <a class="text-decoration-none d-block overlay" style="color:#F8BE7A;" href="index.html">A QUIROPRAXIA</a>
                     </li>
-                    <li>
-                        <a href="sobre.html">CAUSAS</a>
+                    <li class="d-block cursor-pointer p-4">
+                        <a class="text-decoration-none d-block" style="color:#F8BE7A;" href="sobre.html">CAUSAS</a>
                     </li>
-                    <li>
-                        <a href="contato.html">TRATAMENTO</a>
+                    <li class="d-block cursor-pointer p-4">
+                        <a class="text-decoration-none d-block" style="color:#F8BE7A;" href="#Tratamento">TRATAMENTO</a>
                     </li>
-                    <li>
-                        <a href="login.html">BENEFÍCIOS</a>
+                    <li class="d-block cursor-pointer p-4">
+                        <a class="text-decoration-none d-block" style="color:#F8BE7A;" href="#Beneficios">BENEFÍCIOS</a>
                     </li>
-                    <li>
-                        <a href="login.html">SOBRE NÓS</a>
+                    <li class="d-block cursor-pointer p-4">
+                        <a class="text-decoration-none d-block" style="color:#F8BE7A;" href="#SobreNos">SOBRE NÓS</a>
                     </li>
                 </ul>
-                <div class="toggleButton">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
-
-            <div class="banner">
-
+            <div class="d-flex flex-column position-relative">
+                <img src="./assets/img/Banner.jpg">
+                <button class="fw-bold border-0 position-absolute p-2 rounded-2" style="background-color:#F8BE7A;color: #69384B; top: 80%; left: 51%;">AGENDAR UMA CONSULTA</button>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="p-5">
+                <img class="mb-4" src="./assets/img/Titulo_1.jpg">
+                <div class="d-flex flex-column">
+                    <img src="./assets/img/Topico_1.png" class="mb-5">
+                    <p style="text-align:justify; color: #69384B;">
+                        A Quiropraxia é conhecida mundialmente como uma profissão de saúde de atendimento primário ao paciente e educação através de graduação superior.
+                        A Quiropraxia é a união da Filosofia, Ciências e Arte com foco em elevar a consciência humana em relação a vida, saúde e no potencial humano. 
+                        Durante nossa vida, estamos expostos aos estresses físico, químico e emocional que comprometem o funcionamento da coluna vertebral, sistema nervoso e da saúde em geral e, consequentemente, abrem o espaço para o surgimento de doenças físicas e orgânicas. Estas alterações são conhecidas pelos Quiropraxistas como complexo de subluxação vertebral (CID M99. 1) que se refere a mudanças articulares e/ou estruturais e/ou patológicas que comprometem a integridade neural e podem influenciar a função dos órgãos e saúde geral.
+                        Nosso sistema nervoso é o grande condutor de energia e informações conectando todo nosso corpo, garantindo o seu perfeito funcionamento. A coluna vertebral é o alicerce do sistema nervoso por onde toda essa energia e informações fluem.
+                    </p>
+                    <p style="color: #69384B;">
+                        Uma coluna vertebral saudável livre de subluxações vertebrais, proporciona uma boa saúde e o perfeito funcionamento do corpo e mente, gerando saúde, qualidade de vida e bem-estar.
+                    </p>
+                </div>
+            </section>
+        </main>
         <footer></footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
