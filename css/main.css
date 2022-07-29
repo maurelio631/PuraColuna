@@ -15,6 +15,10 @@ html {
     box-sizing: border-box;
 }
 
+p{
+    text-align: justify;
+}
+
 *, *:before, *:after {
     margin: 0 !important;
     padding: 0 !important;
@@ -51,6 +55,14 @@ div span{
     background-color: var(--white);
     border-radius: 10px;
     margin-block: 3px;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.font-purple{
+    color: var(--purple);
 }
 
 .social {
