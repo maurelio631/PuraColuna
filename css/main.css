@@ -26,6 +26,10 @@ p{
     box-sizing: border-box;
 }
 
+body{
+    color: #69384B !important;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -63,6 +67,18 @@ div span{
 
 .font-purple{
     color: var(--purple);
+}
+
+.font-yellow{
+    color: var(--yellow);
+}
+
+.card-personalizado{
+    background-color: var(--yellow) !important;
+    color: var(--purple) !important;
+    border-radius: 1rem !important;
+    padding: 1.6rem !important;
+    margin-block: 1rem !important;
 }
 
 .social {
