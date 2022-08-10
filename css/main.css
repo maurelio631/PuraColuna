@@ -16,7 +16,7 @@
   margin: 0 !important;
   padding: 0 !important;
   list-style: none;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 html {
@@ -30,19 +30,29 @@ img {
   height: auto;
 }
 
+p{
+  text-align: justify;
+}
+
 a {
   text-decoration: none !important;
   color: var(--yellow) !important;
 }
 
-nav button {
+#toggleBtn{
   display: block;
   position: absolute;
-  height: 7px;
   width: 30px;
   top: 4px;
   right: 2px;
+  transition: display 0.3s ;
 }
+
+#toggleBtn span{
+  background-color: #f8be7a;
+  height: auto;
+}
+
 
 .bg-purple {
   background-color: var(--purple);
@@ -58,4 +68,9 @@ nav button {
 
 .text-purple {
   color: var(--purple);
+}
+
+.toggleBtn{
+  display:flex;
+  flex-direction: column;
 }

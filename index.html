@@ -16,16 +16,16 @@
     </head>
     <body>
         <header>
-            <nav class="d-flex flex-column justify-content-center align-items-center bg-purple">
-                <a href="index.html" target="_blank">
+            <nav class="d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center bg-purple">
+                <a href="index.html">
                     <img src="assets/img/Logo_Header.jpg">
                 </a>
                 <ul id="navLinks" class="d-flex flex-column flex-md-row align-items-center justify-content-center">
                     <li>
-                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="index.html">A QUIROPRAXIA</a>
+                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#AQuiropraxia">A QUIROPRAXIA</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="sobre.html">CAUSAS</a>
+                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#Causas">CAUSAS</a>
                     </li>
                     <li>
                         <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#Tratamento">TRATAMENTO</a>
@@ -34,20 +34,19 @@
                         <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#Beneficios">BENEFÍCIOS</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#SobreNos">SOBRE NÓS</a>
+                        <a class="text-decoration-none d-block p-3" style="color:#F8BE7A;" href="#Sobre">SOBRE NÓS</a>
                     </li>
                 </ul>
-                <div id="toggleBtn" class="d-md-none">
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                <div id="toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </nav>
             <div>
-                <img srcset="./assets/img/Banner_sm_md.jpg 600w,
-                ./assets/img/Banner_lg.jpg 700w,  " alt="Banner">
+                <img src="./assets/img/Banner_lg.jpg" alt="Banner">
             </div>
-            <div style="display: flex; flex-direction:column; justify-content:center; align-items: center;">
+            <div class="d-flex d-md-none flex-column justify-content-center align-items-center">
                 <div class="d-flex mx-4 mt-4">
                     <img src="./assets/img/Whatsapp.svg" alt="Logo WhatsApp" class="mx-4">
                     <img src="./assets/img/Instagram.svg" alt="Logo Instagram">
@@ -58,8 +57,8 @@
                 <button class="p-3 bg-yellow text-purple rounded-3 border-0 mb-4">AGENDAR UMA CONSULTA</button>
             </div>
         </header>
-        <main class="d-flex flex-column justify-content-center align-items-center">
-            <section class="d-flex flex-column justify-content-center align-items-center">
+        <main class="d-flex flex-column justify-content-center align-items-center mt-md-4">
+            <section class="d-flex flex-column justify-content-center align-items-center" id="AQuiropraxia">
                 <img src="./assets/img/Titulo_1.jpg">
                 <img src="./assets/img/Topico_1.png" class="my-4">
                 <p class="my-3 px-3">
@@ -71,7 +70,7 @@
                 </p>
                 <p></p>
             </section>
-            <section style="background-image: url('./assets/img/fundo2.jpg'); background-repeat: no-repeat; height: auto;" class="d-flex flex-column justify-content-center align-items-center px-4 my-4">
+            <section style="background-image: url('./assets/img/fundo2.jpg'); background-repeat: no-repeat; height: auto;" class="d-flex flex-column justify-content-center align-items-center px-4 my-4" id="Causas">
                 <img src="./assets/img/Titulo_2.jpg">
                 <strong class="mt-2">
                     Quiropraxia somente por Quiropraxistas.
@@ -82,7 +81,7 @@
                                 No site da ABQ (Associação Brasileira de Quiropraxia), através da ferramenta “Encontre um Quiropraxista”, é possível encontrar um Quiropraxista devidamente habilitado para exercer a profissão com qualidade e principalmente segurança.
                 </p>
             </section>
-            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4">
+            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4" id="Causas">
                 <img src="./assets/img/Titulo_3.jpg">
                 <div>
                     <p>
@@ -118,7 +117,7 @@
                 </div>
                 <img src="assets/img/Topico_3.jpg">
             </section>
-            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4">
+            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4" id="Tratamento">
                 <img src="./assets/img/Titulo_4.jpg" alt="" srcset="">
                 <div>
                     <p>
@@ -131,8 +130,8 @@ A Quiropraxia moderna utiliza métodos de tratamento com base nas ciências do m
                         Metodologia Pura Coluna (Como Funciona Passo a Passo)
                     </strong>
                 </div>
-                <div class="passos d-flex flex-column">
-                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3">
+                <div class="passos d-flex flex-column flex-lg-row ">
+                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3 mx-md-3">
                         <h3 class="p-2">
                             Passo 1 – Primeira Consulta
                         </h3>
@@ -141,7 +140,7 @@ A Quiropraxia moderna utiliza métodos de tratamento com base nas ciências do m
                                 Caso possuírem exames de imagem de raio-x, ressonância magnética ou tomografia computadorizada é de extrema importância para que o Quiropraxista realize uma avalição com mais precisão. Caso não tenha exames e o Quiropraxista achar necessário será encaminhado para fazer um exame de imagem conforme necessidade.
                         </p>
                     </div>
-                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3">
+                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3 mx-md-3">
                         <h3>
                             Passo 2 – Retorno
                         </h3>
@@ -149,7 +148,7 @@ A Quiropraxia moderna utiliza métodos de tratamento com base nas ciências do m
                             Na Pura Coluna, após a 1º consulta é realizado o seu retorno após uma semana, para que o Quiropraxista avalie como seu corpo reagiu a primeira consulta para que possamos traçar uma estratégia de tratamento personalizada e eficiente.
                         </p>
                     </div>
-                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3">
+                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3 mx-md-3">
                         <h3>
                             Passo 3 – Plano de Cuidado
                         </h3>
@@ -157,7 +156,7 @@ A Quiropraxia moderna utiliza métodos de tratamento com base nas ciências do m
                             Após a sequência dos procedimentos de avaliação e retorno, o Quiropraxista, se necessário, apresentará uma estratégia de cuidados, que pode variar em número de sessões e orientações complementares para que o cuidado se torne mais eficiente. O cuidado quiroprático atua tanto no alívio da dor, como na prevenção de futuras lesões e na melhoria da disposição física e mental dos pacientes. Dependendo da gravidade do problema, serão necessárias mais sessões para obter resultados.
                         </p>
                     </div>
-                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3">
+                    <div class="passo text-purple bg-yellow rounded-4 p-3 my-3 mx-md-3">
                         <h3>
                             Passo 4 – Sessão Quiroprática
                         </h3>
@@ -169,16 +168,14 @@ A Quiropraxia moderna utiliza métodos de tratamento com base nas ciências do m
                     </div>
                 </div>
             </section>
-            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4">
+            <section class="d-flex flex-column justify-content-center align-items-center px-4" id="Beneficios">
                 <img src="./assets/img/Titulo_5.jpg" alt="" srcset="">
-                <div>
-                    <p>
-                        As sessões visam não só pelo tratamento, mas pela manutenção da saúde, visto que visitar um Quiropraxista periodicamente previne contra uma série de aflições na coluna e saúde em geral.
+                <p>
+                    As sessões visam não só pelo tratamento, mas pela manutenção da saúde, visto que visitar um Quiropraxista periodicamente previne contra uma série de aflições na coluna e saúde em geral.
 Para entender todos os benefícios que virão com o tempo, é preciso entender a Quiropraxia. Todo ser vivo têm uma inteligência de nascença com seu corpo chamada Inteligência Inata. A missão da Inteligência Inata é manter a matéria do corpo de um ser vivo em organização. As forças da Inteligência Inata operam através ou sobre o sistema nervoso no corpo de um ser vivo. Interferência com a transmissão são sempre causadas direta ou indiretamente pelas subluxações na coluna vertebral. 
 
 O Ajuste de Quiropraxia:
-                    </p>
-                </div>
+                </p>
                 <div>
                     <div>Restaura o fluxo de vida entre cérebro e células do corpo</div>
                     <div>Proporciona bem-estar físico e mental</div>
@@ -210,12 +207,12 @@ Nosso atendimento é humanizado e acolhedor, e focamos em qualidade e resultados
                     </p>
                 </div>
             </section>
-            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4">
+            <section class="d-flex flex-column justify-content-center align-items-center px-4 my-4" id="Sobre">
                 <h3>Arnaldo H Tonini</h3>
                 <h4>Quiropraxista - ABQ 1069</h4>
-                <img src="./assets/img/Arnaldo.jpg">
-                <div>
-                    <p>
+                <img src="./assets/img/Arnaldo.jpg" class="mt-4">
+                <div class="mt-3">
+                    <p class="my-3">
                         Fundador e idealizador da Pura Coluna Quiropraxia. 
                             Apaixonado por esportes radicais (surf, skate, mountain bike), em 2012 conheceu a Quiropraxia devido a problemas na coluna cervical. Procurou diversos profissionais, recebeu diversos diagnósticos e descobriu hérnias de disco na cervical. Por indicação de um professor de Yoga procurou a Quiropraxia, sem muita esperança, com muitas dores, sem conseguir praticar o surf, esporte que é apaixonado, começou a ter quadros de depressão e queda na produção profissional.
                             
@@ -230,33 +227,38 @@ Nosso atendimento é humanizado e acolhedor, e focamos em qualidade e resultados
             </section>
         </main>
         <footer class="bg-purple d-flex flex-column justify-conten-center align-items-center">
-            <img src="assets/img/Logo_Footer.jpg">
-            <p class="text-center text-yellow p-2">
-                Avenida Fagundes Filho, 252, Sala 95 Vila Monte Alegre - São Paulo - SP CEP 04304-000
-            </p>
-            <p class="text-yellow p-2">
-                WhatsApp
-                <a href="https://wa.me/5511999914550" target="_blank">(11) 9 9991 4550</a>
-            </p>
-            <p class="text-yellow p-2">
-                E-mail:
-                <a href="mailto:puracoluna@gmail.com">puracoluna@gmail.com</a>
-            </p>
-            <p class="text-yellow p-2">
-                Instagram: @puracoluna
-            </p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.352669118147!2d-46.6388392!3d-23.6275379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5af8f133fceb%3A0xb3e27ad6c27e06bd!2sAv.%20Fagundes%20Filho%2C%20252%20-%20sala%2095%20-%20Vila%20Monte%20Alegre%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004304-000!5e0!3m2!1spt-BR!2sbr!4v1659658054804!5m2!1spt-BR!2sbr"
-                width="300"
-                height="225"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                style="max-width: 100%;"
-            >
+            <div class="d-flex flex-column justify-content-center align-items-center flex-md-row">
+                <img src="assets/img/Logo_Footer.jpg">
+                <div>
+                    <p class="text-center text-yellow p-2">
+                        Avenida Fagundes Filho, 252, Sala 95 Vila Monte Alegre - São Paulo - SP CEP 04304-000
+                    </p>
+                    <p class="text-yellow text-center p-2">
+                        WhatsApp
+                        <a href="https://wa.me/5511999914550" target="_blank">(11) 9 9991 4550</a>
+                    </p>
+                    <p class="text-yellow text-center p-2">
+                        E-mail:
+                        <a href="mailto:puracoluna@gmail.com">puracoluna@gmail.com</a>
+                    </p>
+                    <p class="text-yellow text-center p-2">
+                        Instagram: @puracoluna
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.352669118147!2d-46.6388392!3d-23.6275379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5af8f133fceb%3A0xb3e27ad6c27e06bd!2sAv.%20Fagundes%20Filho%2C%20252%20-%20sala%2095%20-%20Vila%20Monte%20Alegre%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004304-000!5e0!3m2!1spt-BR!2sbr!4v1659658054804!5m2!1spt-BR!2sbr"
+                    width="300"
+                    height="225"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    style="max-width: 100%;"
+                    class="my-3"
                 >
-            </iframe>
+                    >
+                </iframe>
+            </div>
             <p class="text-yellow my-3 px-2 text-center">
                 Todos os direitos reservados - Pura Coluna Quiropraxia © 2022 - Design created by
                 <a
