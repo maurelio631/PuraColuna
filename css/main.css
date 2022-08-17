@@ -80,5 +80,6 @@ a {
 @media (min-width: 768px){
   .col-md-6 {
       width: 49% !important;
+      margin-inline: 1px !important;
   }
 }
