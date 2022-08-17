@@ -24,13 +24,18 @@ html {
   box-sizing: border-box;
 }
 
+/* .banner {
+  height: 43vh;
+  background-image: url("../assets/img/Banner_sm_md.jpg") !important;
+} */
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-p{
+p {
   text-align: justify;
   max-width: 100% !important;
 }
@@ -40,21 +45,20 @@ a {
   color: var(--yellow) !important;
 }
 
-#toggleBtn{
+#toggleBtn {
   display: block;
   position: absolute;
   height: 30px;
-  top:2px;
+  top: 2px;
   right: 2px;
-  transition: display 0.3s ;
+  transition: display 0.3s;
   cursor: pointer;
 }
 
-#toggleBtn span{
+#toggleBtn span {
   background-color: #f8be7a;
   height: auto;
 }
-
 
 .bg-purple {
   background-color: var(--purple);
@@ -72,14 +76,17 @@ a {
   color: var(--purple);
 }
 
-.toggleBtn{
-  display:flex;
+.toggleBtn {
+  display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .col-md-6 {
-      width: 49% !important;
-      margin-inline: 1px !important;
+    width: 49% !important;
+    margin-inline: 1px !important;
   }
 }
+
+/* @media screen and (max-width: 767px) {
+} */
