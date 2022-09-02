@@ -49,8 +49,8 @@ a {
   display: block;
   position: absolute;
   height: 30px;
-  top: 2px;
-  right: 2px;
+  top: 15px;
+  right: 10px;
   transition: display 0.3s;
   cursor: pointer;
 }
