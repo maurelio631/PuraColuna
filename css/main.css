@@ -13,8 +13,8 @@
 *,
 *:before,
 *:after {
-  margin: 0 !important;
-  padding: 0 !important;
+  /* margin: 0 !important;
+  padding: 0 !important; */
   list-style: none;
   box-sizing: border-box !important;
 }
