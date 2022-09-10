@@ -90,3 +90,15 @@ a {
 
 /* @media screen and (max-width: 767px) {
 } */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: none;
+  background-color: var(--purple);
+  color: var(--yellow);
+  border: none;
+  box-shadow: 1px 1px 1px 1px #342129;
+  border-radius: 50%;
+}
