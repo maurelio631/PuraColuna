@@ -5,10 +5,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -22,6 +19,6 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function Agendar(){
-  window.open("https://wa.me/?text=Gostaria%20de%20marcar%20uma%20avaliação",'_blank');
+function Agendar() {
+  window.open("https://wa.me/5511999914550", "_blank");
 }
