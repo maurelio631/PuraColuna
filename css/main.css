@@ -1,22 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;600&display=swap");
 
 :root {
   --purple: #69384b;
   --yellow: #f8be7a;
   --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
   --headers: "Merriweather";
   --headers-size: 24px;
   --content: "Montserrat";
   --content-size: 18px;
+  --transition: all 0.3s ease;
 }
 
 *,
 *:before,
 *:after {
-  /* margin: 0 !important;
-  padding: 0 !important; */
+  margin: 0;
+  padding: 0;
   list-style: none;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,10 +27,7 @@ html {
   box-sizing: border-box;
 }
 
-/* .banner {
-  height: 43vh;
-  background-image: url("../assets/img/Banner_sm_md.jpg") !important;
-} */
+
 
 img {
   display: block;
@@ -36,13 +36,22 @@ img {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   max-width: 100% !important;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none !important;
   color: var(--yellow) !important;
+  transition: var(--transition);
+}
+
+a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
 }
 
 #toggleBtn {
@@ -76,6 +85,41 @@ a {
   color: var(--purple);
 }
 
+/* Estilos de Interatividade */
+button {
+  transition: var(--transition);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.nav-link {
+  transition: var(--transition);
+  position: relative;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--white) !important;
+  font-weight: 600;
+}
+
+.passo {
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.passo:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
 .toggleBtn {
   display: flex;
   flex-direction: column;
@@ -83,13 +127,10 @@ a {
 
 @media (min-width: 768px) {
   .col-md-6 {
-    width: 49% !important;
-    margin-inline: 1px !important;
+    width: 49%;
+    margin-inline: 1px;
   }
 }
-
-/* @media screen and (max-width: 767px) {
-} */
 
 #btn-back-to-top {
   position: fixed;
@@ -99,6 +140,67 @@ a {
   background-color: var(--purple);
   color: var(--yellow);
   border: none;
-  box-shadow: 1px 1px 1px 1px #342129;
+  box-shadow: var(--shadow);
   border-radius: 50%;
+  transition: var(--transition);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+#btn-back-to-top:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+section {
+  padding: 2rem 0;
+}
+
+section h5 {
+  font-size: clamp(20px, 5vw, 28px);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+  }
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+footer img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  footer .d-flex {
+    flex-wrap: wrap;
+  }
+  
+  footer iframe {
+    width: 100% !important;
+    max-width: 400px;
+  }
 }
